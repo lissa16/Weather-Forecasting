@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 500px;
+    background-color: none;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px wheat;
+    /*box-shadow adds a border like appearance*/
+}
+
+h1 {
+    text-align: center;
+    /*text-align makes the text place where we want*/
+    font-size: 36px;
+    margin-bottom: 20px;
+    /*margin-bottom decides the space which will be applied*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.check {
+    margin-bottom: 10px;
+}
+
+.check label {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    /*padding-->determines box size*/
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #007bff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /*cursor-->it is the hand symbol we get when we hover on something*/
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #0062cc;
+    /*due to this code when we hover on the login button it changes it's colour*/
+}
+
+body {
+    background-image: url('weather2.jpg');
+    background-repeat: no-repeat;
+    height: 90vh;
+    /*removed width cuz the login form went extreme left and looked odd*/
+    background-position: center;
+    background-size: cover;
+}
